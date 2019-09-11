@@ -5,3 +5,5 @@
 ## 学科分类
 
 - [《云计算》](Cloud_Computing/)
+- [《数据挖掘：概念与技术》](Data_Mining/)
+- [《人工智能及其应用》](Artifical_Intelligence/)
