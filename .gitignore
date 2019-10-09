@@ -1,3 +1,9 @@
 # JupyterLab
 
 .ipynb_checkpoints/
+
+# Microsoft Office Word
+*.docx
+
+# Zipped Files
+*.zip
