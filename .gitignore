@@ -1,9 +1,12 @@
 # JupyterLab
-
 .ipynb_checkpoints/
 
 # Microsoft Office Word
 *.docx
+*.dotx
 
 # Zipped Files
 *.zip
+
+# JetBrains
+.idea/
