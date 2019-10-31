@@ -11,3 +11,6 @@
 
 # JetBrains
 .idea/
+
+# Microsoft Visual Studio Code
+.vscode/
