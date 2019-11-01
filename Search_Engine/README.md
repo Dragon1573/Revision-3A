@@ -8,7 +8,7 @@
     <a href="Homework/CRF.ipynb">
       <img src="https://img.shields.io/badge/View%20on-GitHub-important?style=flat&logo=GitHub" alt="View on GitHub" />
     </a>
-    <a href="https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/Search_Engine/Homework/CRF.ipyn">
+    <a href="https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Search_Engine/Homework/CRF.ipynb">
       <img src="https://img.shields.io/badge/View%20on-Jupyter%20Notebook-important?style=flat&logo=Jupyter" alt="View on Jupyter" />
     </a>
   </div>
