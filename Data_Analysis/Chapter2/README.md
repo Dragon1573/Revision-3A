@@ -13,3 +13,5 @@
 - [任务2.2　掌握`NumPy`矩阵与通用函数](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter2/Chapter2-2.ipynb)
 - [任务2.3　利用`NumPy`进行统计分析](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter2/Chapter2-3.ipynb)
 - [实训1　创建数组并进行运算](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter2/Training2-1.ipynb)
+- [实训2　创建一个国际象棋的棋盘](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter2/Training2-2.ipynb)
+- [课后习题：操作题](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter2/Quiz2.ipynb)
