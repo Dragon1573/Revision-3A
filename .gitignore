@@ -14,3 +14,6 @@
 
 # Microsoft Visual Studio Code
 .vscode/
+
+# Directories
+Global_Data/
