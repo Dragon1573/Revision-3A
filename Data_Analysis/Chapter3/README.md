@@ -12,3 +12,5 @@
 - [任务3.1　掌握绘图基础语法与常用参数](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter3/Chapter3-1.ipynb)
 - [任务3.2　分析特征间的关系](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter3/Chapter3-2.ipynb)
 - [实训1　分析$1996\sim2015$年人口数据特征间的关系](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter3/Training3-1.ipynb)
+- [实训2　分析$1996\sim2015$年人口数据各个特征的分布与分散状况](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter3/Training3-2.ipynb)
+- [操作题](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter3/Quiz3.ipynb)
