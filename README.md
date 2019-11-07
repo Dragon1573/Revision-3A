@@ -12,3 +12,5 @@
   - [课堂展示](https://github.com/Dragon1573/Artificial-Intelligence)
 - [《智能搜索引擎技术与应用》](Search_Engine/)
 - [《Python数据分析与应用》](Data_Analysis/)
+- [《算法设计与分析》](Algorithm/)
+- [《大数据基础编程、实验和案例教程》](Big_Data/)
