@@ -8,6 +8,8 @@ ipython_config.py
 *.doc
 *.docx
 *.dotx
+!**/Big_Data/[^~]*.docx
+**/Big_Data/林*.docx
 
 ############### JetBrains Series ###############
 **/.idea/**/workspace.xml
