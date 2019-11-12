@@ -14,3 +14,5 @@
 - [任务4.3　转换与处理时间序列数据](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter4/Chapter4-3.ipynb)
 - [任务4.4　使用分组聚合进行组内计算](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter4/Chapter4-4.ipynb)
 - [任务4.5　创建透视表与交叉表](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter4/Chapter4-5.ipynb)
+- [实训4](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter4/Training4.ipynb)
+- [课后习题·操作题](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter4/Quiz4.ipynb)
