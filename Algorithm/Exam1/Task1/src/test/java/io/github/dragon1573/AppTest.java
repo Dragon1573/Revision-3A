@@ -1,6 +1,5 @@
 package io.github.dragon1573;
 
-import io.github.dragon1573.App;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,33 +9,29 @@ import org.junit.Test;
  * @author Dragon1573
  */
 public class AppTest {
+    private static final int DECIMAL = 96;
+
     /**
      * The test function.
      */
     @Test
     public void dec2Hex() {
-        Assert.assertEquals(
-            "Base transformation failed!",
-            "60",
-            App.dec2Any(96, 16)
-        );
+        String result = App.dec2Any(DECIMAL, 16);
+        System.out.println("十进制的96转换为十六进制是：" + result);
+        Assert.assertEquals("Base transformation failed!", "60", result);
     }
 
     @Test
     public void dec2Oct() {
-        Assert.assertEquals(
-            "Transformation failed!",
-            "140",
-            App.dec2Any(96, 8)
-        );
+        String result = App.dec2Any(DECIMAL, 8);
+        System.out.println("十进制的96转换为八进制是：" + result);
+        Assert.assertEquals("Transformation failed!", "140", result);
     }
 
     @Test
     public void dec2Bin() {
-        Assert.assertEquals(
-            "Transformation failed!",
-            "1100000",
-            App.dec2Any(96, 2)
-        );
+        String result = App.dec2Any(DECIMAL, 2);
+        System.out.println("十进制的96转换为二进制是：" + result);
+        Assert.assertEquals("Transformation failed!", "1100000", result);
     }
 }
