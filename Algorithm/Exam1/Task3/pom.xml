@@ -5,7 +5,7 @@
 
   <groupId>io.github.dragon1573</groupId>
   <artifactId>Exam1_Task3</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 
   <name>Task3</name>
   <url>
@@ -54,6 +54,13 @@
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
+          <configuration>
+            <archive>
+              <manifest>
+                <mainClass>io.github.dragon1573.App</mainClass>
+              </manifest>
+            </archive>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
