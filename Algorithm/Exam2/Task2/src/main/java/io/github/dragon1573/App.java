@@ -4,117 +4,128 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * 主程序
+ * <b>主类</b>
+ *
+ * <p>
+ * 版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC 4.0 BY-SA</a>版权协议。原文链接：<a href="https://blog.csdn.net/likunkun__/article/details/80149445">分治算法——附棋盘覆盖问题的java代码实现</a>。
+ * </p>
+ *
+ * @author likunhong01
+ * @date 2018/04/30
  *
  * @author Dragon1573
- * @date 2019/11/15
+ * @date 2019/11/16
  */
 public class App {
     /**
-     * 原始棋盘
+     * 棋盘
      */
-    private static int[][] board = null;
-
+    private int[][] board;
     /**
-     * L型骨牌编号
+     * 骨牌编号
      */
-    private static int TILE = 0;
+    private int number = 0;
 
-    /**
-     * 初始化棋盘
-     *
-     * @param size
-     *     棋盘大小
-     */
-    static void initialize(int size) {
-        board = new int[size][size];
-    }
-
-    /**
-     * 展示棋盘
-     */
-    static void style() {
-        for (int[] row : board) {
-            System.out.println(Arrays.toString(row));
-        }
+    App(final int size) {
+        this.board = new int[size][size];
     }
 
     /**
      * 棋盘覆盖算法
      *
-     * @param tr
-     *     子棋盘左上角行号
-     * @param tc
-     *     子棋盘左上角列号
      * @param dr
-     *     特殊方格在原棋盘中的行号
+     *     特殊方块行索引
      * @param dc
-     *     特殊方格在原棋盘中的列号
+     *     特殊方块列索引
+     * @param tr
+     *     子棋盘左上角行索引
+     * @param tc
+     *     子棋盘左上角列索引
      * @param size
      *     棋盘大小
      */
-    static void chessBoard(int tr, int tc, int dr, int dc, int size) {
-        // 只有 1×1 的棋盘时，不存在覆盖问题
-        if (size == 1) {
+    void chessBoard(final int dr, final int dc, final int tr, final int tc, final int size) {
+        if (1 == size) {
             return;
         }
-        // 确定骨牌编号并分割棋盘
-        int t = TILE++, s = size / 2;
-        // 递归覆盖左上角棋盘
-        if (dr < tr + s && dc < tc + s) {
-            // 特殊方格在此子棋盘中
-            chessBoard(tr, tc, dr, dc, s);
+
+        final int subSize = size / 2;
+        this.number++;
+        // 注意这里一定要将number存在当前的递归层次里，否则进入下一层递归全局变量会发生改变
+        final int n = this.number;
+
+        // 假设特殊点在左上角区域
+        if (dr < tr + subSize && dc < tc + subSize) {
+            chessBoard(dr, dc, tr, tc, subSize);
         } else {
-            // 特殊方格不在此子棋盘中
-            // 使用t号L型骨牌覆盖右下角
-            board[tr + s - 1][tc + s - 1] = t;
-            // 覆盖其余空格
-            chessBoard(tr, tc, tr + s - 1, tc + s - 1, s);
+            // 不在左上角，设左上角矩阵的右下角就是特殊点（和别的一起放置L形）
+            this.board[tr + subSize - 1][tc + subSize - 1] = n;
+            chessBoard(tr + subSize - 1, tc + subSize - 1, tr, tc, subSize);
         }
-        // 右上角
-        if (dr < tr + size && dc >= tc + size) {
-            chessBoard(tr, tc + s, dr, dc, s);
+
+        // 假设特殊点在右上方
+        if (dr < tr + subSize && dc >= tc + subSize) {
+            chessBoard(dr, dc, tr, tc + subSize, subSize);
         } else {
-            board[tr + s - 1][tc + s] = t;
-            chessBoard(tr, tc + s, tr + s - 1, tc + s, s);
+            // 不在右上方，设右上方矩阵的左下角就是特殊点（和别的一起放置L形）
+            this.board[tr + subSize - 1][tc + subSize] = n;
+            chessBoard(tr + subSize - 1, tc + subSize, tr, tc + subSize, subSize);
         }
-        // 左下角
-        if (dr >= tr + s && dc < tc + s) {
-            chessBoard(tr + s, tc, dr, dc, s);
+
+        // 特殊点在左下方
+        if (dr >= tr + subSize && dc < tc + subSize) {
+            chessBoard(dr, dc, tr + subSize, tc, subSize);
         } else {
-            board[tr + s][tc + s - 1] = t;
-            chessBoard(tr + s, tc, tr + s, tc + s - 1, s);
+            // 不在左下方，设左下方矩阵的右上角就是特殊点（和别的一起放置L形）
+            this.board[tr + subSize][tc + subSize - 1] = n;
+            chessBoard(tr + subSize, tc + subSize - 1, tr + subSize, tc, subSize);
         }
-        // 右下角
-        if (dr >= tr + s && dc >= tc + s) {
-            chessBoard(tr + s, tc + s, dr, dc, s);
+
+        // 特殊点在右下角
+        if (dr >= tr + subSize && dc >= tc + subSize) {
+            chessBoard(dr, dc, tr + subSize, tc + subSize, subSize);
         } else {
-            board[tr + s][tc + s] = t;
-            chessBoard(tr + s, tc + s, tr + s, tc + s, s);
+            // 不在右下角，设右下角矩阵的左上就是特殊点（和别的一起放置L形）
+            this.board[tr + subSize][tc + subSize] = n;
+            chessBoard(tr + subSize, tc + subSize, tr + subSize, tc + subSize, subSize);
         }
+    }
+
+    /**
+     * 展示棋盘
+     *
+     * @param debug 测试模式
+     * @return 棋盘
+     */
+    int[][] style(boolean debug) {
+        if (!debug) {
+            for (int[] row : this.board) {
+                System.out.println(Arrays.toString(row));
+            }
+        }
+        return board;
     }
 
     /**
      * 主函数
      *
-     * @param args
-     *     命令行参数
+     * @param args 命令行参数
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         int size, row, column;
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("请输入棋盘大小：");
             size = scanner.nextInt();
-            System.out.print("请输入特殊方格的横坐标：");
+            System.out.print("请输入特殊方块的行索引：");
             row = scanner.nextInt();
-            System.out.print("请输入特殊方格的纵坐标：");
+            System.out.print("请输入特殊方块的列索引：");
             column = scanner.nextInt();
         }
-        initialize(size);
-        System.out.println("初始棋盘样式为：");
-        style();
-        chessBoard(0, 0, row, column, size);
-        System.out.println("覆盖后的棋盘样式为：");
-        style();
+        App app = new App(size);
+        System.out.println("初始棋盘为：");
+        app.style(false);
+        app.chessBoard(row, column, 0, 0, size);
+        System.out.println("覆盖后的棋盘为：");
+        app.style(false);
     }
 }
