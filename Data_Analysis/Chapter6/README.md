@@ -1,4 +1,4 @@
-# 第5章　使用`pandas`进行数据预处理
+# 第6章　使用 `scikit-learn` 构建模型
 
 [![GitHub license](https://img.shields.io/github/license/Dragon1573/Revision-3A?label=License)](https://github.com/Dragon1573/Revision-3A/blob/master/LICENSE)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-Support-informational?logo=jupyter&style=flat)
