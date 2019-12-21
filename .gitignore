@@ -86,6 +86,7 @@ local.properties
 
 ############### Directories ###############
 Global_Data/
+lib/
 
 ############### Binary Files ###############
 *.zip
