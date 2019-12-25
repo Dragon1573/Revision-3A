@@ -9,10 +9,10 @@
 
 ## 任务
 
-- [任务6.1　使用`sklearn`转换器处理数据](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter6/Chapter6.ipynb)
-- [任务6.2　构建并评价聚类模型](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter6/Chapter6.ipynb)
-- [任务6.3　构建并评价分类模型](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter6/Chapter6.ipynb)
-- [任务6.4　构建并评价回归模型](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter6/Chapter6.ipynb)
+- [任务6.1　使用`sklearn`转换器处理数据](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter6/Chapter6-1.ipynb)
+- [任务6.2　构建并评价聚类模型](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter6/Chapter6-2.ipynb)
+- [任务6.3　构建并评价分类模型](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter6/Chapter6-3.ipynb)
+- [任务6.4　构建并评价回归模型](https://nbviewer.jupyter.org/github/Dragon1573/Revision-3A/blob/master/Data_Analysis/Chapter6/Chapter6-4.ipynb)
 
 ## 实训
 
