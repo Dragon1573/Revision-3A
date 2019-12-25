@@ -87,7 +87,7 @@ local.properties
 ############### Directories ###############
 Global_Data/
 lib/
+!Homework-Answers/
 
 ############### Binary Files ###############
 *.zip
-*.pdf
